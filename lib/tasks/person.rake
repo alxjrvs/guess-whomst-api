@@ -8,4 +8,14 @@ namespace :person do
     end
     puts "Ended"
   end
+
+  task mass_populate: :environment do
+    puts "Starting"
+    250.times do |i|
+      puts "Creating ##{i+1}..."
+      PersonCreator.create!
+      puts "Created ##{i+1}!"
+    end
+    puts "Ended"
+  end
 end
