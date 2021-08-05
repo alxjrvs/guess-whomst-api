@@ -1,5 +1,5 @@
 namespace :person do
-  task create: :environment do
+  task populate: :environment do
     puts "Starting"
     24.times do |i|
       puts "Creating ##{i+1}..."
