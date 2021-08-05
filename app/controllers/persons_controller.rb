@@ -13,7 +13,7 @@ class PersonsController < ActionController::API
     JSON.generate({
       red: chosen[0],
       blue: chosen[1],
-      urls: souls
+      souls: souls
     })
   end
 
