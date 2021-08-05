@@ -28,6 +28,6 @@ class PersonsController < ActionController::API
   end
 
   def twenty_four_souls
-    @twenty_four_souls ||= Person.limit(24).order(Arel.sql('RANDOM()'))
+    Person.limit(24).order(Arel.sql('RANDOM()'))
   end
 end
